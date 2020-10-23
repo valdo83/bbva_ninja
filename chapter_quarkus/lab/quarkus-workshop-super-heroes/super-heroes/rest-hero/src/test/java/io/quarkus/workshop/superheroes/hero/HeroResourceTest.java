@@ -151,22 +151,7 @@ public class HeroResourceTest {
 
 
 
-@Test
-void shouldPingOpenAPI() {
-    given()
-        .header(ACCEPT, APPLICATION_JSON)
-        .when().get("/openapi")
-        .then()
-        .statusCode(OK.getStatusCode());
-}
 
-@Test
-void shouldPingSwaggerUI() {
-    given()
-        .when().get("/swagger-ui")
-        .then()
-        .statusCode(OK.getStatusCode());
-}
 
 
 
